@@ -6,6 +6,9 @@ body {
 h1 {
   font-weight: bold;
   font-size: 40px;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom:48px;
 }
 h2{
   font-weight: bold;
@@ -38,15 +41,19 @@ cite{
 }
 
 /** Top Navigation **/
-nav ul{
+nav ul, .contact-info ul li{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
+nav li{
+  float:left;
+}
 nav li:after {
   content: " /";
   padding-left: 12px;
+  padding-right:12px;
   font-weight: lighter;
 }
 
@@ -54,7 +61,15 @@ nav li:last-child:after {
   content: "";
 }
 
+/**contact page**/
+.contact-info i {
+  padding: 0 10px 0 0;
+  color: #03a3df;
+}
+
+
+
 /**footer**/
 footer{
-  background-image: url(./img/footerimage.jpg);
+  background-image: url(./imgs/footerimage.jpg);
 }
