@@ -3,12 +3,22 @@ body {
   font-family: Arial, sans-serif;
   font-size: 17px;
 }
+
 h1 {
   font-weight: bold;
   font-size: 40px;
   text-align: center;
   padding-top: 48px;
   padding-bottom:48px;
+  background-color: #f2f2f2;
+  border-top:solid black 1px;
+  border-bottom:solid black 1px;
+}
+.introtext{
+  padding-top:32px;
+  padding-bottom:32px;
+  text-align: center;
+  font-size: 1.15em;
 }
 h2{
   font-weight: bold;
@@ -47,7 +57,7 @@ nav ul, .contact-info ul li{
   padding: 0;
   overflow: hidden;
 }
-nav li{
+ nav li{
   float:left;
 }
 nav li:after {
@@ -60,6 +70,23 @@ nav li:after {
 nav li:last-child:after {
   content: "";
 }
+/**index page**/
+.bkgrd-img{
+  background-image:url(../imgs/bkgrd-img-placeholder.jpg);
+  background-size: cover;
+  padding: 120px 32px;
+  background-position: center;
+}
+@media screen and (max-width:1000px) {
+  .bkgrd-img{
+      background-position: bottom;
+}
+}
+.white-bkgrd{
+  padding:16px;
+  background: #ffffff94;
+}
+
 
 /**contact page**/
 .contact-info i {
@@ -67,9 +94,13 @@ nav li:last-child:after {
   color: #03a3df;
 }
 
-
+/**about page **/
+.instructors img, .partners img{
+  max-width: 250px;
+}
 
 /**footer**/
 footer{
-  background-image: url(./imgs/footerimage.jpg);
+  padding:64px 16px 32px;
+  background-image: url(../imgs/footerimage.jpg);
 }
