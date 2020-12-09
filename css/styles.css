@@ -10,9 +10,7 @@ h1 {
   text-align: center;
   padding-top: 48px;
   padding-bottom:48px;
-  background-color: #f2f2f2;
-  border-top:solid black 1px;
-  border-bottom:solid black 1px;
+  background-color: #f2f2f259;
 }
 .introtext{
   padding-top:32px;
@@ -24,12 +22,44 @@ h2{
   font-weight: bold;
   font-size: 24px;
 }
+.grow h2{
+  font-size:5em;
+}
+.grow-sm h2{
+  font-size:3em;
+}
 h3{
   font-weight: bold;
   font-size:17px;
 }
+.grow h3{
+  font-size:3em;
+}
+.grow-sm h3{
+  font-size:2em;
+  font-style: italic;
+}
+nav a:hover{
+  text-decoration: none;
+}
+
+*.white-text, .white-text a{
+  color:white;
+}
 .primary{
   color:#03a3df;
+}
+*.primary-bkgrd{
+  background-color:#03a3df;
+}
+.btn-outline-primary {
+    color: #03a3df;
+    border-color:#03a3df;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #03a3df;
+    border-color: #03a3df;
 }
 .secondary-blue{
   color:#1b447f;
@@ -39,6 +69,9 @@ h3{
 }
 .secondary-grey{
   color:#444444;
+}
+.secondary-grey-bkgrd{
+  background-color:#444;
 }
 blockquote{
   color:#03a3df;
@@ -51,6 +84,8 @@ cite{
 }
 
 /** Top Navigation **/
+
+
 nav ul, .contact-info ul li{
   list-style-type: none;
   margin: 0;
@@ -60,14 +95,14 @@ nav ul, .contact-info ul li{
  nav li{
   float:left;
 }
-nav li:after {
+nav a:after {
   content: " /";
   padding-left: 12px;
   padding-right:12px;
   font-weight: lighter;
 }
 
-nav li:last-child:after {
+nav a:last-child:after {
   content: "";
 }
 /**index page**/
