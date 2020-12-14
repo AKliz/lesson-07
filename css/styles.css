@@ -282,3 +282,52 @@ footer{
   padding:64px 16px 32px;
   background-image: url(../imgs/footerimage.jpg);
 }
+/**** Video CSS****/
+.opening {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.opening video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.opening .container {
+  position: relative;
+  z-index: 2;
+}
+
+.opening .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .opening {
+    background: url('https://assets.mixkit.co/videos/preview/mixkit-archery-targets-in-a-line-17183-large.mp4') black no-repeat center center scroll;
+  }
+  .opening video {
+    display: none;
+  }
+}
