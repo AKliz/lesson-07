@@ -1,3 +1,51 @@
+/****css reset****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.75;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+  max-width: 1300px;
+}
+
 /** Fonts **/
 body {
   font-family: Arial, sans-serif;
@@ -38,6 +86,28 @@ h3{
 .grow-sm h3{
   font-size:2em;
   font-style: italic;
+}
+h3.title {
+    font-size: 1.25em;
+}
+.classes h3{
+  text-align:center;
+  padding:12px;
+  border:solid 1px black;
+  color: white;
+  font-size: 1.5em;
+  margin-top:32px;
+  margin-bottom:16px;
+}
+
+.classes h4 {
+    font-weight: bold;
+    padding-top: 8px;
+    text-decoration: underline;
+}
+.instructor-bio q {
+    font-style: italic;
+    padding-top: 16px;
 }
 nav a:hover{
   text-decoration: none;
@@ -105,6 +175,73 @@ nav a:after {
 nav a:last-child:after {
   content: "";
 }
+
+/********CSS GRID CODE USING CLASSES**********/
+/**css grid to center images in their columns on desktop/labtop sizes**/
+.grid{
+  display: grid;
+}
+.picture {
+  place-self:center;
+}
+.center-center{
+  place-self:center;
+}
+
+.title{
+  place-self:center;
+  padding-top:32px;
+  padding-bottom:16px;
+}
+.table-container{
+  grid-template-columns: auto auto auto auto;
+}
+
+.item-1{
+  grid-column-start: 1;
+  place-self:auto;
+  margin-right:15px;
+}
+.item-2{
+  grid-column-start: 2;
+  place-self:auto;
+  margin-right:15px;
+}
+.item-3{
+  grid-column-start:3;
+  place-self:center;
+}
+.item-4{
+  grid-column-start:4;
+  place-self:center;
+}
+.item-a{
+  grid-column-start: 1;
+}
+h4.item-a {
+    font-weight: bold;
+}
+.item-b{
+  grid-column-start: 2;
+  place-self:self-end;
+}
+.item-c{
+  grid-column-start:3;
+  place-self:center;
+}
+h3.title.item-1,h3.title.item-2, h3.title.item-3 {
+    border-bottom: 1px solid black;
+    margin-bottom: 16px;
+}
+
+h4.item-1 {
+    padding-bottom: 12px;
+}
+p.item-2 {
+    place-self: auto;
+}
+
+
 /**index page**/
 .bkgrd-img{
   background-image:url(../imgs/bkgrd-img-placeholder.jpg);
@@ -131,7 +268,13 @@ nav a:last-child:after {
 
 /**about page **/
 .instructors img, .partners img{
-  max-width: 250px;
+  max-width: 200px;
+}
+p.bio {
+    padding-top: 21px;
+}
+section.row.partners {
+    margin-bottom: 64px;
 }
 
 /**footer**/
