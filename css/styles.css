@@ -301,6 +301,13 @@ legend {
   text-transform: uppercase;
 	font-family: 'PT Sans Narrow';
 }
+select#lesson {
+    margin-left: 12px;
+}
+textarea{
+	padding-top:4px;
+	display: block;
+}
 
 
 
