@@ -272,13 +272,7 @@ p.item-2 {
 
 fieldset{
 	display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 1.75em;
-    padding-inline-end: 1.75em;
-    padding-block-end: 1.625em;
-    min-inline-size: min-content;
+    padding:8px;
     border-width: 2px;
     border-style: solid;
     border-color: threedface;
