@@ -270,6 +270,46 @@ p.item-2 {
   color: #03a3df;
 }
 
+fieldset{
+	display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 1.75em;
+    padding-inline-end: 1.75em;
+    padding-block-end: 1.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: solid;
+    border-color: threedface;
+    background: #efefef63;
+}
+legend {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow';
+		font-size: 16px
+}
+.item-first{
+  grid-column-start: 1;
+}
+.item-second{
+  grid-column-start: 2;
+}
+.submit-btn{
+	display: block;
+	margin-top:16px;
+}
+
+.contact h3 {
+    padding-top: 8px;
+    font-size: 15px;
+    text-transform: uppercase;
+		font-family: 'PT Sans Narrow';
+}
+
+
+
 /**about page **/
 .instructors img, .partners img{
   max-width: 200px;
