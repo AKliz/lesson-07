@@ -264,7 +264,7 @@ p.item-2 {
 }
 
 
-/**contact page**/
+/**contact page & form CSS**/
 .contact-info i {
   padding: 0 10px 0 0;
   color: #03a3df;
@@ -288,7 +288,7 @@ legend {
     text-align: center;
     text-transform: uppercase;
     font-family: 'PT Sans Narrow';
-		font-size: 16px
+		font-size: 18px
 }
 .item-first{
   grid-column-start: 1;
