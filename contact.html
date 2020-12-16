@@ -30,7 +30,7 @@
         <div class="col-sm-3 hidden-xs">
         </div>
         <div class="col-sm-6">
-          <p class="introtext">Intro Text Here for page.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="introtext">We would love to hear from you! Please reach out via email or phone. If you'd like to take a lesson, fill out the <a href"#form">form below</a> and we will get back to you shortly.</p>
         </div>
         <div class="col-sm-3 hidden-xs">
         </div>
@@ -56,10 +56,45 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21694.95333449441!2d-122.45750958026842!3d47.1799981161401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549101d1ddff6c2f%3A0x737c59a0816eb431!2sTacoma%2C%20WA%2098412!5e0!3m2!1sen!2sus!4v1607220145636!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </section>
-        <section class="row py-5">
-          <div class="col-sm-12">
+        <hr>
+        <section class="row py-5" id="form">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <h2 class="title">Lesson Inquiry</h2>
+            <label>
+              <h3>Student Name</h3>
+              <input type="text" name="student-name">
+            </label>
 
+            <label for="phone"><h3>Enter your phone number:</h3>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            </label>
+
+            <label for="lesson">
+              <h3>Lesson Your Intereted In</h3>
+              <select id="lesson" name="lesson">
+                <option value="basic">A101 Basic</option>
+                <option value="intermediate">A102 Intermediate</option>
+                <option value="advanced">A1010 Advanced</option>
+                <option value="advanced">Private Lesson</option>
+              </select>
+            </label>
+
+            <label for="prerequisits">
+              <h3>Students Archery History</h3>
+              <textarea name="name" rows="8" cols="80" id="prerequisits" placeholder="Ex. No Experience, or what prerequisits you meet."></textarea>
+            </label>
+
+
+
+
+            <label for="subscribeNews">
+              <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+              Subscribe to newsletter?
+            </label>
+            <input type="submit">
           </div>
+          <div class="col-sm-2"></div>
         </section>
       </div>
 
