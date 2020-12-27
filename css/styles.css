@@ -1,0 +1,378 @@
+/****css reset****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.75;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+  max-width: 1300px;
+}
+
+/** Fonts **/
+body {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom:48px;
+  background-color: #f2f2f259;
+	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+.introtext{
+  padding-top:32px;
+  padding-bottom:32px;
+  text-align: center;
+  font-size: 1.15em;
+}
+h2{
+  font-weight: bold;
+  font-size: 24px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform: uppercase;
+}
+.grow h2{
+  font-size:5em;
+}
+.grow-sm h2{
+  font-size:3em;
+}
+h3{
+  font-weight: bold;
+  font-size:17px;
+}
+.grow h3{
+  font-size:3em;
+}
+.grow-sm h3{
+  font-size:2em;
+  font-style: italic;
+}
+h3.title {
+    font-size: 1.25em;
+}
+.classes h3{
+  text-align:center;
+  padding:12px;
+  border:solid 1px black;
+  color: white;
+  font-size: 1.5em;
+  margin-top:32px;
+  margin-bottom:16px;
+}
+
+.classes h4 {
+    font-weight: bold;
+    padding-top: 8px;
+    text-decoration: underline;
+}
+.instructor-bio q {
+    font-style: italic;
+    padding-top: 16px;
+}
+nav a:hover{
+  text-decoration: none;
+}
+
+*.white-text, .white-text a{
+  color:white;
+}
+.primary{
+  color:#03a3df;
+}
+*.primary-bkgrd{
+  background-color:#03a3df;
+}
+.btn-outline-primary {
+    color: #03a3df;
+    border-color:#03a3df;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #03a3df;
+    border-color: #03a3df;
+}
+.secondary-blue{
+  color:#1b447f;
+}
+.secondary-yellow{
+  color:#ecb722;
+}
+.secondary-grey{
+  color:#444444;
+}
+.secondary-grey-bkgrd{
+  background-color:#444;
+}
+blockquote{
+  color:#03a3df;
+}
+cite{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color:#03a3df;
+}
+
+/** Top Navigation **/
+
+
+nav ul, .contact-info ul li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ nav li{
+  float:left;
+}
+nav a:after {
+  content: " /";
+  padding-left: 12px;
+  padding-right:12px;
+  font-weight: lighter;
+}
+
+nav a:last-child:after {
+  content: "";
+}
+
+/********CSS GRID CODE USING CLASSES**********/
+/**css grid to center images in their columns on desktop/labtop sizes**/
+.grid{
+  display: grid;
+}
+.picture {
+  place-self:center;
+}
+.center-center{
+  place-self:center;
+}
+
+.title{
+  place-self:center;
+  padding-top:32px;
+  padding-bottom:16px;
+}
+.table-container{
+  grid-template-columns: auto auto auto auto;
+}
+
+.item-1{
+  grid-column-start: 1;
+  place-self:auto;
+  margin-right:15px;
+}
+.item-2{
+  grid-column-start: 2;
+  place-self:auto;
+  margin-right:15px;
+}
+.item-3{
+  grid-column-start:3;
+  place-self:center;
+}
+.item-4{
+  grid-column-start:4;
+  place-self:center;
+}
+.item-a{
+  grid-column-start: 1;
+}
+h4.item-a {
+    font-weight: bold;
+}
+.item-b{
+  grid-column-start: 2;
+  place-self:self-end;
+}
+.item-c{
+  grid-column-start:3;
+  place-self:center;
+}
+h3.title.item-1,h3.title.item-2, h3.title.item-3 {
+    border-bottom: 1px solid black;
+    margin-bottom: 16px;
+}
+
+h4.item-1 {
+    padding-bottom: 12px;
+}
+p.item-2 {
+    place-self: auto;
+}
+
+
+/**index page**/
+.bkgrd-img{
+  background-image:url(../imgs/bkgrd-img-placeholder.jpg);
+  background-size: cover;
+  padding: 120px 32px;
+  background-position: center;
+}
+@media screen and (max-width:1000px) {
+  .bkgrd-img{
+      background-position: bottom;
+}
+}
+.white-bkgrd{
+  padding:16px;
+  background: #ffffff94;
+}
+
+
+/**contact page & form CSS**/
+.contact-info i {
+  padding: 0 10px 0 0;
+  color: #03a3df;
+}
+
+fieldset{
+	display: block;
+  padding: 8px 16px 21px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: threedface;
+  background: #efefef63;
+}
+legend {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'PT Sans Narrow';
+	font-size: 18px
+}
+.item-first{
+  grid-column-start: 1;
+}
+.item-second{
+  grid-column-start: 2;
+}
+.submit-btn{
+	display: block;
+	margin-top:16px;
+}
+
+.contact label {
+  padding-top: 8px;
+  font-size: 15px;
+  text-transform: uppercase;
+	font-family: 'PT Sans Narrow';
+}
+select#lesson {
+    margin-left: 12px;
+}
+textarea{
+	padding-top:4px;
+	display: block;
+}
+
+
+
+/**about page **/
+.instructors img, .partners img{
+  max-width: 200px;
+}
+p.bio {
+    padding-top: 21px;
+}
+section.row.partners {
+    margin-bottom: 64px;
+}
+
+/**footer**/
+footer{
+  padding:64px 16px 32px;
+  background-image: url(../imgs/footerimage2.jpg);
+}
+/**** Video CSS****/
+.opening {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.opening video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.opening .container {
+  position: relative;
+  z-index: 2;
+}
+
+.opening .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .opening {
+    background: url('https://assets.mixkit.co/videos/preview/mixkit-archery-targets-in-a-line-17183-large.mp4') black no-repeat center center scroll;
+  }
+  .opening video {
+    display: none;
+  }
+}
